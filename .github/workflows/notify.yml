@@ -1,0 +1,17 @@
+name: Notify Discord on Commit
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send commit notification to Discord
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d "{\"content\": \"Novo commit no repositório: $GITHUB_SHA\"}" \
+          https://discord.com/api/webhooks/1307737803349561434/f-gfitHHjoUObBxE30SIosGZGje2LB1uLpW9eGNubn6pDka4RdmwWNxAzhgP9cmz2yab
