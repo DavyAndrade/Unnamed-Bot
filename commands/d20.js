@@ -24,7 +24,7 @@ module.exports = {
         { name: "Resultado Final:", value: `**${result.toString()}**` }
       )
       .setThumbnail(
-        "https://media.discordapp.net/attachments/1325193724266942624/1327375392717144216/ae18c47dc81c384bebed446069df9b07.png?ex=68b8a6ab&is=68b7552b&hm=59b40f05cf451f09d00901ba9ff3248e04ba00d41cb24454e9cf29c901a55d07&=&format=webp&quality=lossless&width=920&height=920"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9nAiilf0Q-fX0sWUiQzLSR5hSvPetptqznA_LnFQDQZUR1zHALA74G9FzDTc0kh9rc24&usqp=CAU"
       )
       .setFooter({
         text: interaction.client.user.username,
